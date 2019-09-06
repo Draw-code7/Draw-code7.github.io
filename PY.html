@@ -3,7 +3,7 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
   
-  <title>分类：随记 - Draw-code7&#39;s blog</title>
+  <title>联动 - Draw-code7&#39;s blog</title>
   <meta charset="UTF-8">
   <meta name="description" content>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -11,13 +11,19 @@
   
 
   <link rel="shortcut icon" href="/images/bitbug_favicon.ico" type="image/png">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Draw-code7&#39;s blog">
-<meta property="og:url" content="https://draw-code7.github.io/categories/随记/index.html">
+  <meta name="description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.st">
+<meta property="og:type" content="website">
+<meta property="og:title" content="联动">
+<meta property="og:url" content="https://draw-code7.github.io/PY.html">
 <meta property="og:site_name" content="Draw-code7&#39;s blog">
+<meta property="og:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.st">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://www.chainwon.com/static/logo.png">
+<meta property="og:updated_time" content="2019-09-06T08:29:53.979Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Draw-code7&#39;s blog">
+<meta name="twitter:title" content="联动">
+<meta name="twitter:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.st">
+<meta name="twitter:image" content="https://www.chainwon.com/static/logo.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.15.8/styles/atom-one-dark.css">
    
@@ -25,7 +31,7 @@
   
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1567758652930">
+  <link rel="stylesheet" href="/css/style.css?v=1567758653097">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 <body class="mdui-drawer-body-left">
@@ -145,31 +151,59 @@
   </div>
   <div id="nexmoe-content">
     <div class="nexmoe-primary">
-        <section class="nexmoe-posts" id="brand-waterfall">
-    
-    <div class="nexmoe-post">
-        <a href="/2019/09/03/article-title/">
-            <div class="nexmoe-post-cover mdui-ripple"> 
-                
-                    <img src="https://i.loli.net/2019/01/13/5c3aec85a4343.jpg" alt="article title">
-                
-                <h1>article title</h1>
-            </div>
-        </a>
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2019年09月03日</a>
-            <a><i class="nexmoefont icon-areachart"></i>0 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
-            
-                <a class="nexmoefont icon-appstore-fill -link" href="/categories/随记/">随记</a>
-            
-            
-                <a class="nexmoefont icon-tag-fill -link" href="/tags/Mardown/">Mardown</a> <a class="nexmoefont icon-tag-fill -link" href="/tags/test/">test</a>
-            
-        </div>
-        <article>
-            
-            <script>
+        <style>
+  article ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -5px;
+  }
+  article ul li {
+    transition: all .03s;
+    width: calc(12.5% - 10px);
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    font-size: 0;
+    overflow: hidden;
+  }
+  article ul li > a::after {
+    font-size: 13px;
+    color: #606266;
+    -webkit-transition: none;
+    transition: none;
+    content: attr(title);
+    display: block;
+    position: relative;
+    width: 100%;
+    border: none;
+    padding: 3px 10px 5px 10px;
+    margin-top: -2px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  article ul li img {
+    width: 100%;
+    border-radius: 0;
+    border: none;
+  }
+  @media screen and (max-width: 768px) {
+    article ul li {
+      width: calc(33.3333333333% - 10px);
+    }
+}
+</style>
+
+<div class="nexmoe-post">
+  <article class="nexmoe-py">
+    <ul>
+<li><a href="https://www.chainwon.com/" title="轻惋导航" target="_blank" rel="noopener"><img src="https://www.chainwon.com/static/logo.png" alt="轻惋导航"></a></li>
+</ul>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -188,12 +222,24 @@
             document.body.appendChild(img);
           });
       </script>
-            
-        </article>
-    </div>
-    
+  </article>
+  <section class="nexmoe-comment">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '42b6b492ca6826f061f4',
+        clientSecret: '846c73df34812ed56f4c5ac51552035b4e6e92fb',
+        id: window.location.pathname,
+        repo: 'Draw-code7.github.io',
+        owner: 'Draw-code7',
+        admin: 'Draw-code7'
+    })
+    gitalk.render('gitalk')
+</script>
 </section>
-
+</div>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/js/mdui.min.js"></script>
@@ -209,7 +255,7 @@
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<script src="/js/app.js?v=1567758652942"></script>
+<script src="/js/app.js?v=1567758653105"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
 
 
